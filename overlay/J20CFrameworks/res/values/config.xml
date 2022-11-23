@@ -572,6 +572,7 @@
         <item>220</item> <!--item>sensorRadius</item-->
     </array>
 
+<<<<<<< HEAD:overlay/J20CFrameworks/res/values/config.xml
     <!-- Minimum color temperature, in Kelvin, supported by Night display. -->
     <integer name="config_nightDisplayColorTemperatureMin">1500</integer>
 
@@ -587,4 +588,6 @@
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/bms/fastcharge_mode</string>
 
+=======
+>>>>>>> dd19144 (surya: Disable zram writeback):overlay/frameworks/base/core/res/res/values/config.xml
 </resources>
