@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # AfterLife flags
-AFTERLIFE_MAINTAINER := Skyy丨私は空です
+AFTERLIFE_MAINTAINER := Skyy丨アラタ
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -35,7 +35,7 @@ AFTERLIFE_GAPPS := true
 AFTERLIFE_CORE := true
 
 # Device Manufacture
-PRODUCT_NAME := lineage_surya
+PRODUCT_NAME := afterlife_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
