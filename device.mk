@@ -34,7 +34,10 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 
 # XiaomiParts
-$(call inherit-product, device/xiaomi/surya/parts/parts.mk)
+$(call inherit-product-if-exists, device/xiaomi/surya/parts/parts.mk)
+
+# GalleryGo
+$(call inherit-product, device/xiaomi/surya/Gallery/config.mk)
 
 # ANT+
 PRODUCT_PACKAGES += \
