@@ -17,7 +17,7 @@ if ! [ -d "$VT" ]; then
 fi
 
 # Clone Repository for Kernel
-KERN="kenel/xiaomi/surya"
+KERN="kernel/xiaomi/surya"
 if ! [ -d "$KERN" ]; then
     echo "$KERN not found! Cloning now..."
     if ! git clone -q --depth=1 https://github.com/Shiryu-Kernel/kernel_xiaomi_surya.git -b 4.14 $KERN; then
