@@ -12,30 +12,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common Afterlife stuff.
-$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # AfterLife flags
-AFTERLIFE_MAINTAINER := Skyy丨アラタ
+OCTAVI_BUILD_TYPE := COMMUNITY
+OCTAVI_MAINTAINER := Skyy丨アラタ
+
+# QuickTaps
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Offline Charging
-USE_PIXEL_CHARGING := true
-
 # disable/enable blur support, default is false
 TARGET_SUPPORTS_BLUR := true
+TARGET_USES_BLUR := true
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Gapps
-WITH_GMS := true
-AFTERLIFE_GAPPS := true
-AFTERLIFE_CORE := true
+# Pixel Charger
+USE_PIXEL_CHARGER := true
 
 # Device Manufacture
-PRODUCT_NAME := afterlife_surya
+PRODUCT_NAME := octavi_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
