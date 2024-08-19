@@ -69,3 +69,12 @@ if ! [ -d "$PARTS" ]; then
         echo "Cloning $PARTS failed"
     fi
 fi
+
+# Clone Clang for Kernel
+CLANG="prebuilts/clang/host/linux-x86/clang-r498229"
+if ! [ -d "$CLANG" ]; then
+    echo "$CLANG not found! Cloning now..."
+    if ! git clone -q https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone.git -b 18 $CLANG; then
+        echo "Cloning $CLANG failed"
+    fi
+fi
