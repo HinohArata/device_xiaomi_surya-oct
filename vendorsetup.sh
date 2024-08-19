@@ -25,6 +25,9 @@ if ! [ -d "$KERN" ]; then
     fi
 fi
 
+echo "Set kernel to non-KSU"
+sed -i "s/CONFIG_KSU=y/# CONFIG_KSU is not set/g" kernel/xiaomi/surya/arch/arm64/configs/surya_defconfig
+
 # Clone Repository for Firmware
 FW="firmware/xiaomi/surya"
 if ! [ -d "$FW" ]; then
